@@ -1,16 +1,19 @@
 {
   "name": "db-loader",
   "version": "1.0.0",
-  "description": "",
+  "description": "db-loader",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "servor --reload"
   },
-  "author": "",
+  "author": "dhananjay",
   "license": "ISC",
   "devDependencies": {
     "path": "^0.12.7",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
   }
 }
