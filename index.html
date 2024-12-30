@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./dist/bundle.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        db.start("2-17");
+        db.call(1000, () => {
+            db.end()
+        })
+    </script>
+</body>
+
+</html>
