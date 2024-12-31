@@ -1,7 +1,7 @@
 {
-  "name": "dbloader",
+  "name": "dbel431-loader",
   "version": "1.0.0",
-  "description": "dbloader",
+  "description": "dbel431-loader",
   "main": "index.js",
   "scripts": {
     "start": "servor --reload",
