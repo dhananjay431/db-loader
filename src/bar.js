@@ -8,11 +8,11 @@ export default function db() {
   this.name = "db";
 }
 db.prototype.start = function (num = 1) {
-  if (this.flag != null) {
-    this.flag = null;
-    this.end();
+  if (db.prototype.flag != null) {
+    db.prototype.flag = null;
+    db.prototype.end();
   }
-  this.flag = new Date().getTime();
+  db.prototype.flag = new Date().getTime();
   let d = document.createElement("div");
   d.className = "loader-" + num;
   let l = document.createElement("div");
@@ -26,11 +26,11 @@ db.prototype.end = function () {
 };
 
 db.prototype.call = function (time, cb) {
-  if (this.callFlag != null) {
-    clearTimeout(callFlag);
+  if (db.prototype.callFlag != null) {
+    clearTimeout(db.prototype.callFlag);
   }
-  this.callFlag = setTimeout(() => {
+  db.prototype.callFlag = setTimeout(() => {
     cb();
-    clearTimeout(callFlag);
+    clearTimeout(db.prototype.callFlag);
   }, time);
 };

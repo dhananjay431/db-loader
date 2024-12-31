@@ -14,1481 +14,8 @@ export default function css() {
   align-items: center;
   align-content: normal;
   background-color: #00000070;
-}
-.loader-1-01 {
-	border: .2em dotted currentcolor;
-	border-radius: 50%;
-	animation: 1s loader-01 linear infinite;
-}
-
-@keyframes loader-01 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-02 {
-	border: .2em solid transparent;
-	border-left-color: currentcolor;
-	border-right-color: currentcolor;
-	border-radius: 50%;
-	animation: 1s loader-02 linear infinite;
-}
-
-@keyframes loader-02 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-03 {
-	border: .2em solid currentcolor;
-	border-bottom-color: transparent;
-	border-radius: 50%;
-	animation: 1s loader-03 linear infinite;
-	position: relative;
-}
-
-@keyframes loader-03 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-04 {
-	border: 1px solid currentcolor;
-	border-radius: 50%;
-	animation: 1s loader-04 linear infinite;
-	position: relative;
-	&:before {
-		content: '';
-		display: block;
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: -.2em;
-		left: 50%;
-		border: .2em solid currentcolor;
-		border-radius: 50%;
-	}
-}
-
-@keyframes loader-04 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-05 {
-	border: .2em solid transparent;
-	border-top-color: currentcolor;
-	border-radius: 50%;
-	animation: 1s loader-05 linear infinite;
-	position: relative;
-	&:before {
-		content: '';
-		display: block;
-		width: inherit;
-		height: inherit;
-		position: absolute;
-		top: -.2em;
-		;
-		left: -.2em;
-		;
-		border: .2em solid currentcolor;
-		border-radius: 50%;
-		opacity: .5;
-	}
-}
-
-@keyframes loader-05 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-06 {
-	border: .2em solid currentcolor;
-	border-radius: 50%;
-	animation: loader-06 1s ease-out infinite;
-}
-
-@keyframes loader-06 {
-	0% {
-		transform: scale(0);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 0;
-	}
-}
-
-
-.loader-1-07 {
-	border: 0 solid transparent;
-	border-radius: 50%;
-	position: relative;
-	&:before,
-	&:after {
-		content: '';
-		border: .2em solid currentcolor;
-		border-radius: 50%;
-		width: inherit;
-		height: inherit;
-		position: absolute;
-		top: 0;
-		left: 0;
-		animation: loader-07 1s linear infinite;
-		opacity: 0;
-	}
-	&:before {
-		animation-delay: 1s;
-	}
-	&:after {
-		animation-delay: .5s;
-	}
-}
-
-@keyframes loader-07 {
-	0% {
-		transform: scale(0);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 0;
-	}
-}
-
-
-.loader-1-08 {
-	position: relative;
-	&:before,
-	&:after {
-		content: '';
-		width: inherit;
-		height: inherit;
-		border-radius: 50%;
-		background-color: currentcolor;
-		opacity: 0.6;
-		position: absolute;
-		top: 0;
-		left: 0;
-		animation: loader-08 2.0s infinite ease-in-out;
-	}
-	&:after {
-		animation-delay: -1.0s;
-	}
-}
-
-@keyframes loader-08 {
-	0%,
-	100% {
-		transform: scale(0.0);
-	}
-	50% {
-		transform: scale(1.0);
-	}
-}
-
-
-.loader-1-09 {
-	background-color: currentcolor;
-	border-radius: 50%;
-	animation: loader-09 1.0s infinite ease-in-out;
-}
-
-@keyframes loader-09 {
-	0% {
-		transform: scale(0);
-	}
-	100% {
-		transform: scale(1.0);
-		opacity: 0;
-	}
-}
-
-
-.loader-1-10 {
-	position: relative;
-	animation: loader-10-1 2.0s infinite linear;
-	&:before,
-	&:after {
-		content: '';
-		width: 0;
-		height: 0;
-		border: .5em solid currentcolor;
-		display: block;
-		position: absolute;
-		border-radius: 100%;
-		animation: loader-10-2 2s infinite ease-in-out;
-	}
-	&:before {
-		top: 0;
-		left: 50%;
-	}
-	&:after {
-		bottom: 0;
-		right: 50%;
-		animation-delay: -1s;
-	}
-}
-
-@keyframes loader-10-1 {
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes loader-10-2 {
-	0%,
-	100% {
-		transform: scale(0);
-	}
-	50% {
-		transform: scale(1);
-	}
-}
-
-
-.loader-1-11 {
-	background-color: currentcolor;
-	animation: loader-11 1.2s infinite ease-in-out;
-}
-
-@keyframes loader-11 {
-	0% {
-		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-	}
-	50% {
-		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-	}
-	100% {
-		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-	}
-}
-
-
-.loader-1-12 {
-	position: relative;
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		background-color: currentcolor;
-		left: 50%;
-		right: 0;
-		top: 0;
-		bottom: 50%;
-		box-shadow: -.5em 0 0 currentcolor;
-		animation: loader-12 1s linear infinite;
-	}
-	&:after {
-		top: 50%;
-		bottom: 0;
-		animation-delay: .25s;
-	}
-}
-
-@keyframes loader-12 {
-	0%,
-	100% {
-		box-shadow: -.5em 0 0 transparent;
-		background-color: currentcolor;
-	}
-	50% {
-		box-shadow: -.5em 0 0 currentcolor;
-		background-color: transparent;
-	}
-}
-
-
-.loader-1-13:before,
-.loader-1-13:after,
-.loader-1-13 {
-	border-radius: 50%;
-	animation-fill-mode: both;
-	animation: loader-13 1.8s infinite ease-in-out;
-}
-
-.loader-1-13 {
-	color: currentcolor;
-	position: relative;
-	transform: translateZ(0);
-	animation-delay: -0.16s;
-	top: -1em;
-	&:before {
-		right: 100%;
-		animation-delay: -0.32s;
-	}
-	&:after {
-		left: 100%;
-	}
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		top: 0;
-		width: inherit;
-		height: inherit;
-	}
-}
-
-@keyframes loader-13 {
-	0%,
-	80%,
-	100% {
-		box-shadow: 0 1em 0 -1em;
-	}
-	40% {
-		box-shadow: 0 1em 0 -.2em;
-	}
-}
-
-
-.loader-1-14 {
-	border-radius: 50%;
-	box-shadow: 0 1em 0 -.2em currentcolor;
-	position: relative;
-	animation: loader-14 0.8s ease-in-out alternate infinite;
-	animation-delay: 0.32s;
-	top: -1em;
-	&:after,
-	&:before {
-		content: '';
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		box-shadow: inherit;
-		animation: inherit;
-	}
-	&:before {
-		left: -1em;
-		animation-delay: 0.48s;
-	}
-	&:after {
-		right: -1em;
-		animation-delay: 0.16s;
-	}
-}
-
-@keyframes loader-14 {
-	0% {
-		box-shadow: 0 2em 0 -.2em currentcolor;
-	}
-	100% {
-		box-shadow: 0 1em 0 -.2em currentcolor;
-	}
-}
-
-
-.loader-1-15 {
-	background: currentcolor;
-	position: relative;
-	animation: loader-15 1s ease-in-out infinite;
-	animation-delay: 0.4s;
-	width: .25em;
-	height: .5em;
-	margin: 0 .5em;
-	&:after,
-	&:before {
-		content: '';
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		background: inherit;
-		animation: inherit;
-	}
-	&:before {
-		right: .5em;
-		animation-delay: 0.2s;
-	}
-	&:after {
-		left: .5em;
-		animation-delay: 0.6s;
-	}
-}
-
-@keyframes loader-15 {
-	0%,
-	100% {
-		box-shadow: 0 0 0 currentcolor, 0 0 0 currentcolor;
-	}
-	50% {
-		box-shadow: 0 -.25em 0 currentcolor, 0 .25em 0 currentcolor;
-	}
-}
-
-
-.loader-1-16 {
-	transform: rotateZ(45deg);
-	perspective: 1000px;
-	border-radius: 50%;
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: inherit;
-		height: inherit;
-		border-radius: 50%;
-		animation: 1s spin linear infinite;
-	}
-	&:before {
-		transform: rotateX(70deg);
-	}
-	&:after {
-		transform: rotateY(70deg);
-		animation-delay: .4s;
-	}
-}
-
-@keyframes rotate {
-	0% {
-		transform: translate(-50%, -50%) rotateZ(0deg);
-	}
-	100% {
-		transform: translate(-50%, -50%) rotateZ(360deg);
-	}
-}
-
-@keyframes rotateccw {
-	0% {
-		transform: translate(-50%, -50%) rotate(0deg);
-	}
-	100% {
-		transform: translate(-50%, -50%) rotate(-360deg);
-	}
-}
-
-@keyframes spin {
-	0%,
-	100% {
-		box-shadow: .2em 0px 0 0px currentcolor;
-	}
-	12% {
-		box-shadow: .2em .2em 0 0 currentcolor;
-	}
-	25% {
-		box-shadow: 0 .2em 0 0px currentcolor;
-	}
-	37% {
-		box-shadow: -.2em .2em 0 0 currentcolor;
-	}
-	50% {
-		box-shadow: -.2em 0 0 0 currentcolor;
-	}
-	62% {
-		box-shadow: -.2em -.2em 0 0 currentcolor;
-	}
-	75% {
-		box-shadow: 0px -.2em 0 0 currentcolor;
-	}
-	87% {
-		box-shadow: .2em -.2em 0 0 currentcolor;
-	}
-}
-
-
-.loader-1-17 {
-	position: relative;
-	background-color: currentcolor;
-	border-radius: 50%;
-	&:after,
-	&:before {
-		content: "";
-		position: absolute;
-		width: .25em;
-		height: .25em;
-		border-radius: 50%;
-		opacity: .8;
-	}
-	&:after {
-		left: -.5em;
-		top: -.25em;
-		background-color: currentcolor;
-		transform-origin: .75em 1em;
-		animation: loader-17 1s linear infinite;
-		opacity: .6;
-	}
-	&:before {
-		left: -1.25em;
-		top: -.75em;
-		background-color: currentcolor;
-		transform-origin: 1.5em 1em;
-		animation: loader-17 2s linear infinite;
-	}
-}
-
-@keyframes loader-17 {
-	0% {
-		transform: rotateZ(0deg) translate3d(0, 0, 0);
-	}
-	100% {
-		transform: rotateZ(360deg) translate3d(0, 0, 0);
-	}
-}
-
-
-.loader-1-18 {
-	position: relative;
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		border-radius: 50%;
-		border: .1em solid transparent;
-		border-bottom-color: currentcolor;
-		top: 0;
-		left: 0;
-		animation: 1s loader-18 linear infinite;
-	}
-	&:before {
-		width: 1em;
-		height: 1em;
-	}
-	&:after {
-		width: .8em;
-		height: .8em;
-		top: .1em;
-		left: .1em;
-		animation-direction: reverse;
-	}
-}
-
-@keyframes loader-18 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-19 {
-	border-top: .2em solid currentcolor;
-	border-right: .2em solid transparent;
-	animation: loader-19 1s linear infinite;
-	border-radius: 100%;
-	position: relative;
-}
-
-@keyframes loader-19 {
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-20 {
-	background-color: transparent;
-	box-shadow: inset 0px 0px 0px .1em currentcolor;
-	border-radius: 50%;
-	position: relative;
-	&:after,
-	&:before {
-		position: absolute;
-		content: "";
-		background-color: currentcolor;
-		top: .5em;
-		left: .5em;
-		height: .1em;
-		transform-origin: left center;
-	}
-	&:after {
-		width: .4em;
-		animation: loader-20 2s linear infinite;
-	}
-	&:before {
-		width: .3em;
-		animation: loader-20 8s linear infinite;
-	}
-}
-
-@keyframes loader-20 {
-	0% {
-		transform: rotate(0deg)
-	}
-	100% {
-		transform: rotate(360deg)
-	}
-}
-
-
-.loader-1-21 {
-	position: relative;
-	&:before,
-	&:after {
-		position: absolute;
-		content: "";
-	}
-	&:before {
-		width: 80%;
-		height: 80%;
-		left: 10%;
-		bottom: 10%;
-		border-radius: 100% 100% 100% 0;
-		box-shadow: 0px 0px 0px .1em currentcolor;
-		animation: loader-21 1s linear infinite;
-		transform: rotate(-46deg);
-	}
-	&:after {
-		width: 1em;
-		height: .3em;
-		border-radius: 100%;
-		left: 0;
-		background-color: rgba(255, 255, 255, 0.2);
-		bottom: -.2em;
-		z-index: -1;
-	}
-}
-
-@keyframes loader-21 {
-	0% {
-		top: 0;
-	}
-	50% {
-		top: -5px;
-	}
-	100% {
-		top: 0;
-	}
-}
-
-
-.loader-1-22 {
-	border: .1em currentcolor solid;
-	border-radius: 100%;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-	&:after,
-	&:before {
-		position: absolute;
-		content: "";
-		background-color: currentcolor;
-	}
-	&:after {
-		width: 50%;
-		height: .1em;
-		left: 50%;
-		top: 50%;
-		transform-origin: left center;
-		animation: loader-22 2s linear infinite alternate;
-	}
-	&:before {
-		width: 100%;
-		height: 40%;
-		left: 0;
-		bottom: 0;
-	}
-}
-
-@keyframes loader-22 {
-	0% {
-		transform: rotate(-160deg);
-	}
-	100% {
-		transform: rotate(-20deg);
-	}
-}
-
-
-.loader-1-23 {
-	height: .5em;
-	border: .1em currentcolor solid;
-	border-radius: .1em;
-	position: relative;
-	animation: loader-23 5s linear infinite;
-	&:after {
-		width: .07em;
-		height: 100%;
-		background-color: currentcolor;
-		border-radius: 0px .5em .5em 0px;
-		position: absolute;
-		content: "";
-		top: 0;
-		left: calc(100% + .1em);
-	}
-}
-
-@keyframes loader-23 {
-	0% {
-		box-shadow: inset 0px 0px 0px currentcolor;
-	}
-	100% {
-		box-shadow: inset 1em 0px 0px currentcolor;
-	}
-}
-
-
-.loader-1-24 {
-	width: .8em;
-	height: 1em;
-	border: .1em currentcolor solid;
-	border-radius: 0px 0px .2em .2em;
-	position: relative;
-	&:after,
-	&:before {
-		position: absolute;
-		content: "";
-	}
-	&:after {
-		width: .2em;
-		height: 50%;
-		border: .1em currentcolor solid;
-		border-left: none;
-		border-radius: 0px .5em .5em 0px;
-		left: calc(100% + .1em);
-		top: .1em;
-	}
-	&:before {
-		width: .1em;
-		height: .3em;
-		background-color: currentcolor;
-		top: -.3em;
-		left: .05em;
-		box-shadow: .2em 0px 0px 0px currentcolor, .2em -.2em 0px 0px currentcolor, .4em 0px 0px 0px currentcolor;
-		animation: loader-24 1s linear infinite alternate;
-	}
-}
-
-@keyframes loader-24 {
-	0% {
-		height: 0px
-	}
-	100% {
-		height: 6px;
-	}
-}
-
-
-.loader-1-25 {
-	border: .1em currentcolor solid;
-	position: relative;
-	animation: loader-25-1 5s linear infinite;
-	&:after {
-		width: .2em;
-		height: .2em;
-		position: absolute;
-		content: "";
-		background-color: currentcolor;
-		bottom: calc(100% + .2em);
-		left: -.4em;
-		animation: loader-25-2 1s ease-in-out infinite;
-	}
-}
-
-@keyframes loader-25-1 {
-	0% {
-		box-shadow: inset 0 0 0 0 currentcolor;
-	}
-	100% {
-		box-shadow: inset 0 -1em 0 0 currentcolor;
-	}
-}
-
-@keyframes loader-25-2 {
-	25% {
-		left: calc(100% + .2em);
-		bottom: calc(100% + .2em);
-	}
-	50% {
-		left: calc(100% + .2em);
-		bottom: -.4em;
-	}
-	75% {
-		left: -.4em;
-		bottom: -.4em;
-	}
-	100% {
-		left: -.4em;
-		bottom: calc(100% + .2em);
-	}
-}
-
-
-.loader-1-26 {
-	width: .5em;
-	height: .5em;
-	background-color: currentcolor;
-	box-shadow: 1em 0px 0px currentcolor;
-	border-radius: 50%;
-	animation: loader-26 1s ease-in-out infinite alternate;
-}
-
-@keyframes loader-26 {
-	0% {
-		opacity: 0.1;
-		transform: rotate(0deg) scale(0.5);
-	}
-	100% {
-		opacity: 1;
-		transform: rotate(360deg) scale(1.2);
-	}
-}
-
-
-.loader-1-27 {
-	box-shadow: inset 0 0 0 .1em currentcolor;
-	border-radius: 50%;
-	position: relative;
-	margin-left: 1.2em;
-	&:before {
-		content: '';
-		display: block;
-		width: inherit;
-		height: inherit;
-		border-radius: 50%;
-		position: absolute;
-		right: 1.2em;
-		top: 0;
-		box-shadow: inset 0 0 0 .1em currentcolor;
-	}
-	&:after {
-		border: .2em solid currentcolor;
-		box-shadow: -1.2em 0 0 0 currentcolor;
-		width: 0;
-		height: 0;
-		border-radius: 50%;
-		left: 50%;
-		top: 25%;
-		position: absolute;
-		content: "";
-		animation: loader-27 2s linear infinite alternate;
-	}
-}
-
-@keyframes loader-27 {
-	0% {
-		left: 0;
-	}
-	100% {
-		left: .5em;
-	}
-}
-
-
-.loader-1-28 {
-	position: relative;
-	animation: 2s loader-28-1 infinite;
-	&:before {
-		content: '';
-		display: block;
-		width: inherit;
-		height: inherit;
-		border-radius: 80% 20%;
-		border: .1em solid currentcolor;
-		transform: rotate(45deg);
-		border-width: .1em .05em .05em .1em;
-	}
-	&:after {
-		content: '';
-		display: block;
-		width: .2em;
-		height: .2em;
-		position: absolute;
-		top: .4em;
-		left: 50%;
-		border-radius: 50%;
-		box-shadow: -.07em .07em 0 .1em currentcolor;
-		animation: 2s loader-28-2 linear infinite;
-	}
-}
-
-@keyframes loader-28-1 {
-	0%,
-	100% {
-		transform: scaleY(1);
-	}
-	10% {
-		transform: scaleY(0);
-	}
-	20% {
-		transform: scaleY(1);
-	}
-}
-
-@keyframes loader-28-2 {
-	0%,
-	100% {
-		transform: translateX(0);
-	}
-	30% {
-		transform: translateX(-100%);
-	}
-	50% {
-		transform: transalteX(200%);
-	}
-}
-
-
-.loader-1-29 {
-	border-radius: 50%;
-	box-shadow: inset 0 0 0 .1em currentcolor, -.5em -.5em 0 -.4em currentcolor, 0 -.7em 0 -.4em currentcolor, .5em -.5em 0 -.4em currentcolor, -.5em .5em 0 -.4em currentcolor, 0 .7em 0 -.4em currentcolor, .5em .5em 0 -.4em currentcolor, -.7em 0 0 -.4em currentcolor, .7em 0 0 -.4em currentcolor;
-	animation: 5s loader-29 linear infinite;
-}
-
-@keyframes loader-29 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-30 {
-	border: .2em solid transparent;
-	border-top-color: currentcolor;
-	border-bottom-color: currentcolor;
-	border-radius: 50%;
-	position: relative;
-	animation: 1s loader-30 linear infinite;
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		width: 0;
-		height: 0;
-		position: absolute;
-		border: .2em solid transparent;
-		border-bottom-color: currentcolor;
-	}
-	&:before {
-		transform: rotate(135deg);
-		right: -.3em;
-		top: -.05em;
-	}
-	&:after {
-		transform: rotate(-45deg);
-		left: -.3em;
-		bottom: -.05em;
-	}
-}
-
-@keyframes loader-30 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-
-.loader-1-31 {
-	box-shadow: 0 0 2em currentcolor;
-	background-color: currentcolor;
-	position: relative;
-	border-radius: 50%;
-	transform: rotateX(-60deg) perspective(1000px);
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: inherit;
-		height: inherit;
-		border-radius: inherit;
-		animation: 1s loader-31 ease-out infinite;
-	}
-	&:after {
-		animation-delay: .4s;
-	}
-}
-
-@keyframes loader-31 {
-	0% {
-		opacity: 1;
-		transform: rotate(0deg);
-		box-shadow: 0 0 0 -.5em currentcolor, 0 0 0 -.5em currentcolor, 0 0 0 -.5em currentcolor, 0 0 0 -.5em currentcolor, 0 0 0 -.5em currentcolor, 0 0 0 -.5em currentcolor, 0 0 0 -.5em currentcolor, 0 0 0 -.5em currentcolor;
-	}
-	100% {
-		opacity: 0;
-		transform: rotate(180deg);
-		box-shadow: -1em -1em 0 -.35em currentcolor, 0 -1.5em 0 -.35em currentcolor, 1em -1em 0 -.35em currentcolor, -1.5em 0 0 -.35em currentcolor, 1.5em -0 0 -.35em currentcolor, -1em 1em 0 -.35em currentcolor, 0 1.5em 0 -.35em currentcolor, 1em 1em 0 -.35em currentcolor;
-	}
-}
-
-
-.loader-1-32 {
-	position: relative;
-	border-radius: 50%;
-	box-shadow: 0 0 1em 0 currentcolor, inset 0 0 1em 0 currentcolor;
-	animation: 1s loader-32 linear infinite;
-	&:before,
-	&:after {
-		content: '';
-		display: block;
-		width: inherit;
-		height: inherit;
-		position: absolute;
-		border-radius: 50%;
-	}
-	&:before {
-		border-top: .2em solid currentcolor;
-		border-right: .2em solid transparent;
-		top: .28em;
-		right: calc(50% - .22em);
-	}
-	&:after {
-		border-bottom: .2em solid currentcolor;
-		border-left: .2em solid transparent;
-		bottom: .28em;
-		left: calc(50% - .22em);
-	}
-}
-
-@keyframes loader-32 {
-	0% {
-		transform: rotateX(-60deg) rotateZ(0deg);
-	}
-	100% {
-		transform: rotateX(-60deg) rotateZ(360deg);
-	}
-}
-
-
-.loader-1-33 {
-	border-radius: 50%;
-	position: relative;
-	width: 180px;
-	height: 180px;
-	&:after,
-	&:before {
-		position: absolute;
-		content: "";
-	}
-	&:after {
-		height: 0.1em;
-		width: 1em;
-		background-color: currentcolor;
-		border-radius: 0.1em;
-		bottom: 0;
-		left: 0;
-		transform-origin: bottom center;
-		animation: loader-33-1 0.8s ease-in-out infinite alternate;
-	}
-	&:before {
-		height: .2em;
-		width: .2em;
-		background-color: currentcolor;
-		border-radius: 50%;
-		top: 0;
-		left: calc(50% - .1em);
-		animation: loader-33-2 0.4s ease-in-out infinite alternate;
-	}
-}
-
-@keyframes loader-33-2 {
-	0% {
-		height: .24em;
-		transform: translateY(0px);
-	}
-	75% {
-		height: .2em;
-		width: .2em;
-	}
-	100% {
-		height: .1em;
-		width: .24em;
-		transform: translateY(.8em);
-	}
-}
-
-@keyframes loader-33-1 {
-	0% {
-		transform: rotate(-45deg);
-	}
-	100% {
-		transform: rotate(45deg);
-	}
-}
-
-
-.loader-1-34 {
-	position: relative;
-	width: 1em;
-	height: .5em;
-	&:after,
-	&:before {
-		position: absolute;
-		content: "";
-		height: .4em;
-		width: .4em;
-		top: 0;
-		background-color: currentcolor;
-		border-radius: 50%;
-	}
-	&:after {
-		right: 0;
-		animation: loader-34-2 0.5s ease-in-out infinite;
-		animation-direction: alternate;
-	}
-	&:before {
-		left: 0;
-		animation: loader-34-1 0.5s ease-in-out infinite;
-		animation-direction: alternate;
-	}
-}
-
-@keyframes loader-34-1 {
-	0% {
-		transform: translatex(0px);
-	}
-	65% {
-		height: .4em;
-		width: .4em;
-	}
-	100% {
-		height: .5em;
-		width: .3em;
-		transform: translatex(.2em);
-	}
-}
-
-@keyframes loader-34-2 {
-	0% {
-		transform: translatex(0px);
-	}
-	65% {
-		height: .4em;
-		width: .4em;
-	}
-	100% {
-		height: .5em;
-		width: .3em;
-		transform: translatex(-.2em);
-	}
-}
-
-
-.loader-1-35 {
-	margin: 0 .5em;
-	position: relative;
-	&:before {
-		border-radius: 50%;
-		background-color: currentcolor;
-		animation: loader-35 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-		content: '';
-		width: inherit;
-		height: inherit;
-		top: 0;
-		left: 0;
-		position: absolute;
-	}
-}
-
-@keyframes loader-35 {
-	0% {
-		transform: translateX(0) scale(1)
-	}
-	25% {
-		transform: translateX(-100%) scale(0.3)
-	}
-	50% {
-		transform: translateX(0) scale(1)
-	}
-	75% {
-		transform: translateX(100%) scale(0.3)
-	}
-	100% {
-		transform: translateX(0) scale(1)
-	}
-}
-
-
-.loader-1-36 {
-	position: relative;
-	&:before,
-	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	&:before {
-		width: 1em;
-		height: 1em;
-		border: .1em solid currentcolor;
-		border-radius: 50%;
-		animation: loader-36-1 1.15s infinite -0.3s;
-	}
-	&:after {
-		right: 0;
-		bottom: 0;
-		margin: auto;
-		width: 0;
-		height: 0;
-		border: .1em solid currentcolor;
-		border-radius: 50%;
-		transform: translate(-.2em);
-		animation: loader-36-2 4.6s infinite steps(1);
-	}
-}
-
-@keyframes loader-36-1 {
-	to {
-		transform: rotateX(180deg);
-	}
-}
-
-@keyframes loader-36-2 {
-	0% {
-		opacity: 0;
-	}
-	25% {
-		opacity: 1;
-	}
-	50% {
-		box-shadow: .2em 0 0 currentcolor;
-	}
-	75% {
-		box-shadow: .2em 0 0 currentcolor, .4em 0 0 currentcolor;
-	}
-}
-
-
-.loader-1-37 {
-	border-right: .1em solid currentcolor;
-	border-radius: 100%;
-	animation: loader-37 800ms linear infinite;
-	&:before,
-	&:after {
-		content: '';
-		width: .8em;
-		height: .8em;
-		display: block;
-		position: absolute;
-		top: calc(50% - .4em);
-		left: calc(50% - .4em);
-		border-left: .08em solid currentcolor;
-		border-radius: 100%;
-		animation: loader-37 400ms linear infinite reverse;
-	}
-	&:after {
-		width: .6em;
-		height: .6em;
-		top: calc(50% - .3em);
-		left: calc(50% - .3em);
-		border: 0;
-		border-right: .05em solid currentcolor;
-		animation: none;
-	}
-}
-
-@keyframes loader-37 {
-	from {
-		transform: rotate(360deg);
-	}
-	to {
-		transform: rotate(0deg);
-	}
-}
-
-
-.loader-1-38 {
-	height: 0.1em;
-	width: 0.1em;
-	box-shadow: -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor;
-	animation: loader-38 6s infinite;
-}
-
-@keyframes loader-38 {
-	0% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor;
-	}
-	8.33% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor;
-	}
-	16.66% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor;
-	}
-	24.99% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor;
-	}
-	33.32% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor;
-	}
-	41.65% {
-		box-shadow: 0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor;
-	}
-	49.98% {
-		box-shadow: 0.2em 0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor;
-	}
-	58.31% {
-		box-shadow: -0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor;
-	}
-	66.64% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor;
-	}
-	74.97% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, 0.2em -0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor;
-	}
-	83.3% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, 0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor;
-	}
-	91.63% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor, -0.2em 0.2em 0 0.1em currentcolor;
-	}
-	100% {
-		box-shadow: -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor, -0.2em -0.2em 0 0.1em currentcolor;
-	}
-}
-
-.loader-1-39 {
-  position: relative;
-  width: .15em;
-  height: .15em;
-  background-color: currentcolor;
-  border-radius: 100%;
-  animation: loader-39-1 30s infinite linear;
-	&:before, &:after {
-		content: '';
-		border-radius: 100%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	&:before {
-		width: .3em;
-		height: 1em;
-		animation: loader-39-2 .8s linear infinite;
-	}
-	&:after {
-		width: 1em;
-		height: .3em;
-		animation: loader-39-2 1.2s linear infinite;
-	}
-}
-@keyframes loader-39-1 {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-@keyframes loader-39-2 {
-  0% {
-    box-shadow: 0.04em -0.04em 0 0.02em currentcolor;
-  }
-  25% {
-    box-shadow: 0.04em 0.04em 0 0.02em currentcolor;
-  }
-  50% {
-    box-shadow: -0.04em 0.04em 0 0.02em currentcolor;
-  }
-  75% {
-    box-shadow: -0.04em -0.04em 0 0.02em currentcolor;
-  }
-  100% {
-    box-shadow: 0.04em -0.04em 0 0.02em currentcolor;
-  }
-}
-
-.loader-1-40 {
-	border: .05em currentcolor solid;
-	border-radius: .2em;
-	overflow: hidden;
-	position: relative;
-	&:after, &:before {
-		content: '';
-		border-radius: 50%;
-		position: absolute;
-		width: inherit;
-		height: inherit;
-		animation: loader-40 2s infinite linear;
-	}
-	&:before {
-		border-top: .2em currentcolor solid;
-		top: -.15em;
-		left: calc( -50% - .15em );
-		transform-origin: right center;
-	}
-	&:after {
-		border-bottom: .2em currentcolor solid;
-		top: .15em;
-		right: calc( -50% - .15em );
-		transform-origin: left center;
-	}
-}
-@keyframes loader-40 {
-	from { transform: rotate(0deg); }
-	to { transform: rotate(359deg); }
-}
-
-.loader-1-41 {
-	border: .05em currentcolor solid;
-	border-radius: .2em;
-	position: relative;
-	background: linear-gradient(45deg, transparent 48%, currentcolor 50%, currentcolor 50%, transparent 52%, transparent),
-				linear-gradient(-45deg, transparent 48%, currentcolor 50%, currentcolor 50%, transparent 52%, transparent);
-	background-size: .5em .5em;
-	background-position: 0% 0%;
-	animation: loader-41 1s infinite linear;
-}
-@keyframes loader-41 {
-	from { background-position: 0 0; }
-	to { background-position: -1em 0; }
-}
-
-
-.loader-1-42 {
-	width: 2em;
-	height: .66em;
-	border: .05em currentcolor solid;
-	border-radius: .1em;
-	background: linear-gradient(-60deg, transparent 0%, transparent 50%, currentcolor 50%, currentcolor 75%, transparent 75%, transparent);
-	background-size: 1em 2em;
-	background-position: 0 0;
-	animation: loader-42 0.8s infinite linear;
-}
-@keyframes loader-42 {
-	from { background-position: 0 0; }
-	to { background-position: -2em 0; }
-}
-        
-.loader-2-1 {
+}        
+.loader-1 {
     width: 48px;
     height: 48px;
     border: 5px solid #FFF;
@@ -1499,7 +26,7 @@ export default function css() {
             animation: rotation 1s linear infinite;
   }
   
-  .loader-2-2 {
+  .loader-2 {
     width: 48px;
     height: 48px;
     border: 3px solid #FFF;
@@ -1509,7 +36,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-2:after {
+  .loader-2:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1522,7 +49,7 @@ export default function css() {
     border-bottom-color: #FF3D00;
   }
   
-  .loader-2-3 {
+  .loader-3 {
     width: 48px;
     height: 48px;
     border: 3px solid #FFF;
@@ -1532,7 +59,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-3:after {
+  .loader-3:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1545,7 +72,7 @@ export default function css() {
     border-bottom-color: #FF3D00;
   }
   
-  .loader-2-4 {
+  .loader-4 {
     width: 48px;
     height: 48px;
     border: 3px solid #FFF;
@@ -1555,7 +82,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-4:after {
+  .loader-4:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1568,7 +95,7 @@ export default function css() {
     border-color: #FF3D00 transparent;
   }
   
-  .loader-2-5 {
+  .loader-5 {
     width: 48px;
     height: 48px;
     border: 3px solid #FFF;
@@ -1578,7 +105,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-5:after {
+  .loader-5:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1591,7 +118,7 @@ export default function css() {
     border-color: #FF3D00 transparent;
   }
   
-  .loader-2-6 {
+  .loader-6 {
     width: 48px;
     height: 48px;
     border: 2px solid #FFF;
@@ -1601,7 +128,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-6:after, .loader-2-6:before {
+  .loader-6:after, .loader-6:before {
     content: "";
     position: absolute;
     left: 0;
@@ -1612,7 +139,7 @@ export default function css() {
     transform: translate(150%, 150%);
     border-radius: 50%;
   }
-  .loader-2-6:before {
+  .loader-6:before {
     left: auto;
     top: auto;
     right: 0;
@@ -1620,7 +147,7 @@ export default function css() {
     transform: translate(-150%, -150%);
   }
   
-  .loader-2-7 {
+  .loader-7 {
     width: 48px;
     height: 48px;
     border: 2px solid #FFF;
@@ -1630,7 +157,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-7:after, .loader-2-7:before {
+  .loader-7:after, .loader-7:before {
     content: "";
     position: absolute;
     left: 0;
@@ -1640,14 +167,14 @@ export default function css() {
     height: 6px;
     border-radius: 50%;
   }
-  .loader-2-7:before {
+  .loader-7:before {
     left: auto;
     top: auto;
     right: 0;
     bottom: 0;
   }
   
-  .loader-2-8 {
+  .loader-8 {
     width: 48px;
     height: 48px;
     border: 3px solid #FFF;
@@ -1657,7 +184,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-8:after {
+  .loader-8:after {
     content: "";
     position: absolute;
     left: 0;
@@ -1669,7 +196,7 @@ export default function css() {
     border-radius: 50%;
   }
   
-  .loader-2-9 {
+  .loader-9 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1679,7 +206,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-9:after {
+  .loader-9:after {
     content: "";
     position: absolute;
     left: 4px;
@@ -1690,7 +217,7 @@ export default function css() {
     border-radius: 50%;
   }
   
-  .loader-2-10 {
+  .loader-10 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1701,7 +228,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-10:after {
+  .loader-10:after {
     content: "";
     position: absolute;
     left: 0;
@@ -1719,7 +246,7 @@ export default function css() {
     transform-origin: center center;
   }
   
-  .loader-2-11 {
+  .loader-11 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1730,7 +257,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-11:after, .loader-2-11:before {
+  .loader-11:after, .loader-11:before {
     content: "";
     position: absolute;
     left: 0;
@@ -1747,7 +274,7 @@ export default function css() {
             animation: rotationBack 0.5s linear infinite;
     transform-origin: center center;
   }
-  .loader-2-11:before {
+  .loader-11:before {
     width: 32px;
     height: 32px;
     border-color: #FFF #FFF transparent transparent;
@@ -1755,7 +282,7 @@ export default function css() {
             animation: rotation 1.5s linear infinite;
   }
   
-  .loader-2-12 {
+  .loader-12 {
     width: 48px;
     height: 48px;
     border: 3px dotted #FFF;
@@ -1766,7 +293,7 @@ export default function css() {
     -webkit-animation: rotation 2s linear infinite;
             animation: rotation 2s linear infinite;
   }
-  .loader-2-12:after {
+  .loader-12:after {
     content: "";
     position: absolute;
     left: 0;
@@ -1784,7 +311,7 @@ export default function css() {
     transform-origin: center center;
   }
   
-  .loader-2-13 {
+  .loader-13 {
     width: 48px;
     height: 48px;
     border: 2px solid #FFF;
@@ -1794,7 +321,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-13:after {
+  .loader-13:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1805,13 +332,13 @@ export default function css() {
     transform: translateX(-50%);
   }
   
-  .loader-2-14 {
+  .loader-14 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-14::after, .loader-2-14::before {
+  .loader-14::after, .loader-14::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -1823,12 +350,12 @@ export default function css() {
     -webkit-animation: animloader14 2s linear infinite;
             animation: animloader14 2s linear infinite;
   }
-  .loader-2-14::after {
+  .loader-14::after {
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   
-  .loader-2-15 {
+  .loader-15 {
     width: 48px;
     height: 48px;
     border: 5px dotted #FFF;
@@ -1839,7 +366,7 @@ export default function css() {
             animation: rotation 2s linear infinite;
   }
   
-  .loader-2-16 {
+  .loader-16 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1849,7 +376,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-16:after {
+  .loader-16:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -1861,7 +388,7 @@ export default function css() {
     background: #263238;
   }
   
-  .loader-2-17 {
+  .loader-17 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1872,7 +399,7 @@ export default function css() {
             animation: rotation 1s linear infinite;
   }
   
-  .loader-2-18 {
+  .loader-18 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1882,7 +409,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-18:after {
+  .loader-18:after {
     content: "";
     position: absolute;
     left: 0;
@@ -1894,7 +421,7 @@ export default function css() {
     border-left: 4px solid transparent;
   }
   
-  .loader-2-19 {
+  .loader-19 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1904,7 +431,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-19:after {
+  .loader-19:after {
     content: "";
     position: absolute;
     left: 0;
@@ -1917,7 +444,7 @@ export default function css() {
     animation: rotation 0.5s linear infinite reverse;
   }
   
-  .loader-2-20 {
+  .loader-20 {
     width: 48px;
     height: 48px;
     border: 5px solid;
@@ -1928,7 +455,7 @@ export default function css() {
             animation: rotation 1s linear infinite;
   }
   
-  .loader-2-21 {
+  .loader-21 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1940,7 +467,7 @@ export default function css() {
             animation: rotation 1s linear infinite;
   }
   
-  .loader-2-22 {
+  .loader-22 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -1951,7 +478,7 @@ export default function css() {
             animation: animloader51 1s linear infinite alternate;
   }
   
-  .loader-2-23 {
+  .loader-23 {
     width: 48px;
     height: 48px;
     border: 3px solid #FFF;
@@ -1962,7 +489,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-23:after {
+  .loader-23:after {
     content: "";
     position: absolute;
     left: 20px;
@@ -1972,7 +499,7 @@ export default function css() {
     transform: rotate(-40deg);
   }
   
-  .loader-2-24 {
+  .loader-24 {
     width: 48px;
     height: 48px;
     border-width: 3px;
@@ -1984,7 +511,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-24:after {
+  .loader-24:after {
     content: "";
     position: absolute;
     left: 20px;
@@ -1994,7 +521,7 @@ export default function css() {
     transform: rotate(-40deg);
   }
   
-  .loader-2-25 {
+  .loader-25 {
     width: 48px;
     height: 48px;
     background: #FFF;
@@ -2004,13 +531,13 @@ export default function css() {
             animation: animloader14 1s ease-in infinite;
   }
   
-  .loader-2-26 {
+  .loader-26 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-26::after, .loader-2-26::before {
+  .loader-26::after, .loader-26::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -2022,18 +549,18 @@ export default function css() {
     -webkit-animation: animloader14 2s linear infinite;
             animation: animloader14 2s linear infinite;
   }
-  .loader-2-26::after {
+  .loader-26::after {
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   
-  .loader-2-27 {
+  .loader-27 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-27::after, .loader-2-27::before {
+  .loader-27::after, .loader-27::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -2045,12 +572,12 @@ export default function css() {
     -webkit-animation: animloader27 2s ease-in-out infinite;
             animation: animloader27 2s ease-in-out infinite;
   }
-  .loader-2-27::after {
+  .loader-27::after {
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   
-  .loader-2-28 {
+  .loader-28 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -2059,7 +586,7 @@ export default function css() {
             animation: animloader28 1s linear infinite;
   }
   
-  .loader-2-29 {
+  .loader-29 {
     border: 24px solid #FFF;
     border-bottom-color: #FF3D00;
     border-radius: 50%;
@@ -2069,7 +596,7 @@ export default function css() {
             animation: rotation 1s linear infinite;
   }
   
-  .loader-2-30 {
+  .loader-30 {
     border: 2px solid #FFF;
     width: 48px;
     height: 48px;
@@ -2080,7 +607,7 @@ export default function css() {
     -webkit-animation: rotation 2s linear infinite;
             animation: rotation 2s linear infinite;
   }
-  .loader-2-30:after {
+  .loader-30:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -2091,7 +618,7 @@ export default function css() {
     transform: translate(-50%, -50%);
   }
   
-  .loader-2-31 {
+  .loader-31 {
     width: 48px;
     height: 48px;
     background: #FFF;
@@ -2101,7 +628,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-31:after {
+  .loader-31:after {
     content: "";
     position: absolute;
     left: 6px;
@@ -2114,7 +641,7 @@ export default function css() {
     box-shadow: 25px 2px, 10px 22px;
   }
   
-  .loader-2-32 {
+  .loader-32 {
     width: 48px;
     height: 48px;
     border: 4px solid;
@@ -2126,7 +653,7 @@ export default function css() {
     -webkit-animation: rotation 1s ease-in-out infinite;
             animation: rotation 1s ease-in-out infinite;
   }
-  .loader-2-32:after {
+  .loader-32:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -2137,7 +664,7 @@ export default function css() {
     border-radius: 50%;
   }
   
-  .loader-2-33 {
+  .loader-33 {
     border: 2px solid;
     border-color: transparent #FFF;
     width: 48px;
@@ -2148,7 +675,7 @@ export default function css() {
     -webkit-animation: rotation 2s linear infinite;
             animation: rotation 2s linear infinite;
   }
-  .loader-2-33:after {
+  .loader-33:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -2159,7 +686,7 @@ export default function css() {
     transform: translate(-50%, -50%);
   }
   
-  .loader-2-34 {
+  .loader-34 {
     border: 24px solid;
     border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -2168,7 +695,7 @@ export default function css() {
             animation: animloader34 1s linear infinite;
   }
   
-  .loader-2-35 {
+  .loader-35 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -2177,7 +704,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-35:after, .loader-2-35:before {
+  .loader-35:after, .loader-35:before {
     content: "";
     position: absolute;
     left: 0;
@@ -2188,14 +715,14 @@ export default function css() {
     transform: translate(-50%, 50%);
     border-radius: 50%;
   }
-  .loader-2-35:before {
+  .loader-35:before {
     left: auto;
     right: 0;
     background: #FFF;
     transform: translate(50%, 100%);
   }
   
-  .loader-2-36 {
+  .loader-36 {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -2204,7 +731,7 @@ export default function css() {
     -webkit-animation: zeroRotation 1s linear infinite alternate;
             animation: zeroRotation 1s linear infinite alternate;
   }
-  .loader-2-36:after, .loader-2-36:before {
+  .loader-36:after, .loader-36:before {
     content: "";
     position: absolute;
     left: 0;
@@ -2215,13 +742,13 @@ export default function css() {
     transform: translate(-50%, 50%);
     border-radius: 50%;
   }
-  .loader-2-36:before {
+  .loader-36:before {
     left: auto;
     right: 0;
     transform: translate(50%, 100%);
   }
   
-  .loader-2-37 {
+  .loader-37 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -2230,7 +757,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-37:after, .loader-2-37:before {
+  .loader-37:after, .loader-37:before {
     content: "";
     position: absolute;
     width: 24px;
@@ -2241,7 +768,7 @@ export default function css() {
     -webkit-animation: scale50 1s infinite ease-in-out;
             animation: scale50 1s infinite ease-in-out;
   }
-  .loader-2-37:before {
+  .loader-37:before {
     top: auto;
     bottom: 0;
     background-color: #FF3D00;
@@ -2249,7 +776,7 @@ export default function css() {
             animation-delay: 0.5s;
   }
   
-  .loader-2-38 {
+  .loader-38 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -2258,7 +785,7 @@ export default function css() {
     -webkit-animation: rotation 1s linear infinite;
             animation: rotation 1s linear infinite;
   }
-  .loader-2-38:after, .loader-2-38:before {
+  .loader-38:after, .loader-38:before {
     content: "";
     position: absolute;
     width: 24px;
@@ -2271,12 +798,12 @@ export default function css() {
     -webkit-animation: animloader38 1s infinite ease-in-out;
             animation: animloader38 1s infinite ease-in-out;
   }
-  .loader-2-38:before {
+  .loader-38:before {
     background-color: #FF3D00;
     transform: scale(0.5) translate(-48px, -48px);
   }
   
-  .loader-2-39 {
+  .loader-39 {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -2287,7 +814,7 @@ export default function css() {
             animation: shadowExpandX 2s linear infinite alternate;
   }
   
-  .loader-2-40 {
+  .loader-40 {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -2299,7 +826,7 @@ export default function css() {
             animation: shadowPulse 2s linear infinite;
   }
   
-  .loader-2-41 {
+  .loader-41 {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -2312,7 +839,7 @@ export default function css() {
             animation: rotation 2s ease-in-out infinite;
   }
   
-  .loader-2-42 {
+  .loader-42 {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -2323,7 +850,7 @@ export default function css() {
             animation: animloader42 1s linear infinite alternate;
   }
   
-  .loader-2-43 {
+  .loader-43 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -2335,7 +862,7 @@ export default function css() {
             animation: shadowRolling 2s linear infinite;
   }
   
-  .loader-2-44 {
+  .loader-44 {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -2346,7 +873,7 @@ export default function css() {
             animation: animloader44 2s linear infinite;
   }
   
-  .loader-2-45 {
+  .loader-45 {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -2357,14 +884,14 @@ export default function css() {
             animation: animloader45 1s linear infinite alternate;
   }
   
-  .loader-2-46 {
+  .loader-46 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: inline-block;
     position: relative;
   }
-  .loader-2-46::after {
+  .loader-46::after {
     content: "";
     width: 16px;
     height: 16px;
@@ -2377,13 +904,13 @@ export default function css() {
     top: 0;
   }
   
-  .loader-2-47 {
+  .loader-47 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-47::after, .loader-2-47::before {
+  .loader-47::after, .loader-47::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -2394,19 +921,19 @@ export default function css() {
     -webkit-animation: rotation 2s ease-in-out infinite;
             animation: rotation 2s ease-in-out infinite;
   }
-  .loader-2-47::after {
+  .loader-47::after {
     border-color: #FF3D00;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   
-  .loader-2-48 {
+  .loader-48 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-48::after, .loader-2-48::before {
+  .loader-48::after, .loader-48::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -2417,19 +944,19 @@ export default function css() {
     -webkit-animation: animloader14 2s ease-in-out infinite;
             animation: animloader14 2s ease-in-out infinite;
   }
-  .loader-2-48::after {
+  .loader-48::after {
     border-color: #FF3D00;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   
-  .loader-2-49 {
+  .loader-49 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-49::after, .loader-2-49::before {
+  .loader-49::after, .loader-49::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -2440,18 +967,18 @@ export default function css() {
     -webkit-animation: rotation 2s ease-in-out infinite alternate;
             animation: rotation 2s ease-in-out infinite alternate;
   }
-  .loader-2-49::after {
+  .loader-49::after {
     border-color: #FF3D00;
     animation-direction: alternate-reverse;
   }
   
-  .loader-2-50 {
+  .loader-50 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-50::after, .loader-2-50::before {
+  .loader-50::after, .loader-50::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -2462,19 +989,19 @@ export default function css() {
     -webkit-animation: scaleOut 2s ease-in-out infinite;
             animation: scaleOut 2s ease-in-out infinite;
   }
-  .loader-2-50::after {
+  .loader-50::after {
     border-color: #FF3D00;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
   }
   
-  .loader-2-51 {
+  .loader-51 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-51::after, .loader-2-51::before {
+  .loader-51::after, .loader-51::before {
     content: "";
     width: 48px;
     height: 48px;
@@ -2485,12 +1012,12 @@ export default function css() {
     -webkit-animation: rotationBreak 3s ease-in-out infinite alternate;
             animation: rotationBreak 3s ease-in-out infinite alternate;
   }
-  .loader-2-51::after {
+  .loader-51::after {
     border-color: #FF3D00;
     animation-direction: alternate-reverse;
   }
   
-  .loader-2-52 {
+  .loader-52 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -2499,7 +1026,7 @@ export default function css() {
     -webkit-animation: rotation 2s linear infinite;
             animation: rotation 2s linear infinite;
   }
-  .loader-2-52:after, .loader-2-52:before {
+  .loader-52:after, .loader-52:before {
     content: "";
     position: absolute;
     left: 0;
@@ -2514,7 +1041,7 @@ export default function css() {
             animation: rotationBack 1.5s linear infinite;
     transform-origin: center center;
   }
-  .loader-2-52:before {
+  .loader-52:before {
     width: 28px;
     height: 28px;
     border-color: #FFF;
@@ -2522,7 +1049,7 @@ export default function css() {
             animation: rotation 1s linear infinite;
   }
   
-  .loader-2-53 {
+  .loader-53 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -2532,7 +1059,7 @@ export default function css() {
             animation: flipX 1s linear infinite;
   }
   
-  .loader-2-54 {
+  .loader-54 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -2543,7 +1070,7 @@ export default function css() {
             animation: fill 2s linear infinite alternate;
   }
   
-  .loader-2-55 {
+  .loader-55 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -2552,7 +1079,7 @@ export default function css() {
     animation: zeroRotation 1s ease infinite alternate-reverse;
   }
   
-  .loader-2-56 {
+  .loader-56 {
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -2562,13 +1089,13 @@ export default function css() {
             animation: animloader56 2s linear infinite;
   }
   
-  .loader-2-57 {
+  .loader-57 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-57::after {
+  .loader-57::after {
     content: "";
     width: 24px;
     height: 24px;
@@ -2581,13 +1108,13 @@ export default function css() {
             animation: animloader57 2s linear infinite alternate;
   }
   
-  .loader-2-58 {
+  .loader-58 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-58::before {
+  .loader-58::before {
     content: "";
     width: 24px;
     height: 24px;
@@ -2597,7 +1124,7 @@ export default function css() {
     -webkit-animation: animloader58 2s linear infinite alternate;
             animation: animloader58 2s linear infinite alternate;
   }
-  .loader-2-58::after {
+  .loader-58::after {
     content: "";
     position: absolute;
     left: 0;
@@ -2610,14 +1137,14 @@ export default function css() {
             animation: animloader58m 2s linear infinite alternate;
   }
   
-  .loader-2-59 {
+  .loader-59 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
     transform: rotate(45deg);
   }
-  .loader-2-59::before {
+  .loader-59::before {
     content: "";
     width: 24px;
     height: 24px;
@@ -2627,7 +1154,7 @@ export default function css() {
     -webkit-animation: animloader59 4s ease infinite;
             animation: animloader59 4s ease infinite;
   }
-  .loader-2-59::after {
+  .loader-59::after {
     content: "";
     position: absolute;
     left: 0;
@@ -2640,7 +1167,7 @@ export default function css() {
             animation: animloader56 2s ease infinite;
   }
   
-  .loader-2-60 {
+  .loader-60 {
     width: 16px;
     height: 16px;
     box-shadow: 0 30px, 0 -30px;
@@ -2653,7 +1180,7 @@ export default function css() {
     -webkit-animation: animloader60 2s ease infinite;
             animation: animloader60 2s ease infinite;
   }
-  .loader-2-60::after, .loader-2-60::before {
+  .loader-60::after, .loader-60::before {
     content: "";
     width: 16px;
     height: 16px;
@@ -2667,7 +1194,7 @@ export default function css() {
     -webkit-animation: animloader60 2s 0.2s ease infinite;
             animation: animloader60 2s 0.2s ease infinite;
   }
-  .loader-2-60::before {
+  .loader-60::before {
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
     left: 60px;
@@ -2678,7 +1205,7 @@ export default function css() {
     padding-top: 75px;
   }
   
-  .loader-2-61 {
+  .loader-61 {
     width: 8px;
     height: 40px;
     border-radius: 4px;
@@ -2689,7 +1216,7 @@ export default function css() {
     -webkit-animation: animloader61m 0.3s 0.3s linear infinite alternate;
             animation: animloader61m 0.3s 0.3s linear infinite alternate;
   }
-  .loader-2-61::after, .loader-2-61::before {
+  .loader-61::after, .loader-61::before {
     content: "";
     width: 8px;
     height: 40px;
@@ -2701,13 +1228,13 @@ export default function css() {
     -webkit-animation: animloader61 0.3s 0.45s linear infinite alternate;
             animation: animloader61 0.3s 0.45s linear infinite alternate;
   }
-  .loader-2-61::before {
+  .loader-61::before {
     left: -20px;
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
   }
   
-  .loader-2-62 {
+  .loader-62 {
     width: 8px;
     height: 40px;
     border-radius: 4px;
@@ -2718,7 +1245,7 @@ export default function css() {
     -webkit-animation: animloader61 0.3s 0.3s linear infinite alternate;
             animation: animloader61 0.3s 0.3s linear infinite alternate;
   }
-  .loader-2-62::after, .loader-2-62::before {
+  .loader-62::after, .loader-62::before {
     content: "";
     width: 8px;
     height: 40px;
@@ -2731,13 +1258,13 @@ export default function css() {
     -webkit-animation: animloader61 0.3s 0.45s linear infinite alternate;
             animation: animloader61 0.3s 0.45s linear infinite alternate;
   }
-  .loader-2-62::before {
+  .loader-62::before {
     left: -20px;
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
   }
   
-  .loader-2-63 {
+  .loader-63 {
     width: 8px;
     height: 48px;
     display: inline-block;
@@ -2748,7 +1275,7 @@ export default function css() {
             animation: animloader63 1s linear infinite alternate;
   }
   
-  .loader-2-64 {
+  .loader-64 {
     width: 8px;
     height: 48px;
     display: inline-block;
@@ -2760,7 +1287,7 @@ export default function css() {
             animation: animloader64 0.6s linear infinite;
   }
   
-  .loader-2-65 {
+  .loader-65 {
     width: 48px;
     height: 6px;
     display: inline-block;
@@ -2777,7 +1304,7 @@ export default function css() {
     padding-left: 15%;
   }
   
-  .loader-2-66 {
+  .loader-66 {
     width: 4.8px;
     height: 4.8px;
     display: inline-block;
@@ -2788,7 +1315,7 @@ export default function css() {
     -webkit-animation: animloader66 0.3s 0.3s linear infinite alternate;
             animation: animloader66 0.3s 0.3s linear infinite alternate;
   }
-  .loader-2-66::after, .loader-2-66::before {
+  .loader-66::after, .loader-66::before {
     content: "";
     width: 4.8px;
     height: 4.8px;
@@ -2800,13 +1327,13 @@ export default function css() {
     -webkit-animation: animloader66 0.3s 0.45s linear infinite alternate;
             animation: animloader66 0.3s 0.45s linear infinite alternate;
   }
-  .loader-2-66::after {
+  .loader-66::after {
     top: -15px;
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
   }
   
-  .loader-2-67 {
+  .loader-67 {
     width: 4.8px;
     height: 4.8px;
     display: inline-block;
@@ -2817,7 +1344,7 @@ export default function css() {
     -webkit-animation: animloader66 0.3s 0.3s linear infinite alternate;
             animation: animloader66 0.3s 0.3s linear infinite alternate;
   }
-  .loader-2-67::after, .loader-2-67::before {
+  .loader-67::after, .loader-67::before {
     content: "";
     width: 4.8px;
     height: 4.8px;
@@ -2830,13 +1357,13 @@ export default function css() {
     -webkit-animation: animloader66 0.3s 0.45s linear infinite alternate;
             animation: animloader66 0.3s 0.45s linear infinite alternate;
   }
-  .loader-2-67::after {
+  .loader-67::after {
     top: -15px;
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
   }
   
-  .loader-2-68 {
+  .loader-68 {
     width: 8px;
     height: 48px;
     display: inline-block;
@@ -2847,7 +1374,7 @@ export default function css() {
             animation: animloader68 1s linear infinite alternate;
   }
   
-  .loader-2-69 {
+  .loader-69 {
     width: 20px;
     height: 12px;
     display: inline-block;
@@ -2858,7 +1385,7 @@ export default function css() {
     -webkit-animation: animloader69 0.6s 0.3s ease infinite alternate;
             animation: animloader69 0.6s 0.3s ease infinite alternate;
   }
-  .loader-2-69::after, .loader-2-69::before {
+  .loader-69::after, .loader-69::before {
     content: "";
     width: 20px;
     height: 12px;
@@ -2870,14 +1397,14 @@ export default function css() {
     -webkit-animation: animloader69 0.6s ease infinite alternate;
             animation: animloader69 0.6s ease infinite alternate;
   }
-  .loader-2-69::after {
+  .loader-69::after {
     left: 110%;
     right: auto;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
   
-  .loader-2-70 {
+  .loader-70 {
     width: 100%;
     height: 4.8px;
     display: inline-block;
@@ -2885,7 +1412,7 @@ export default function css() {
     background: rgba(255, 255, 255, 0.15);
     overflow: hidden;
   }
-  .loader-2-70::after {
+  .loader-70::after {
     content: "";
     width: 96px;
     height: 4.8px;
@@ -2897,7 +1424,7 @@ export default function css() {
             animation: hitZak 1s linear infinite alternate;
   }
   
-  .loader-2-71 {
+  .loader-71 {
     width: 100%;
     height: 4.8px;
     display: inline-block;
@@ -2905,7 +1432,7 @@ export default function css() {
     background: rgba(255, 255, 255, 0.15);
     overflow: hidden;
   }
-  .loader-2-71::after {
+  .loader-71::after {
     content: "";
     width: 192px;
     height: 4.8px;
@@ -2917,7 +1444,7 @@ export default function css() {
             animation: animloader71 2s linear infinite;
   }
   
-  .loader-2-72 {
+  .loader-72 {
     width: 100%;
     height: 4.8px;
     display: inline-block;
@@ -2925,7 +1452,7 @@ export default function css() {
     background: rgba(255, 255, 255, 0.15);
     overflow: hidden;
   }
-  .loader-2-72::after {
+  .loader-72::after {
     content: "";
     width: 0;
     height: 4.8px;
@@ -2941,7 +1468,7 @@ export default function css() {
     justify-content: normal;
   }
   
-  .loader-2-73 {
+  .loader-73 {
     width: 0;
     height: 4.8px;
     display: inline-block;
@@ -2951,7 +1478,7 @@ export default function css() {
     -webkit-animation: animFw 8s linear infinite;
             animation: animFw 8s linear infinite;
   }
-  .loader-2-73::after, .loader-2-73::before {
+  .loader-73::after, .loader-73::before {
     content: "";
     width: 10px;
     height: 1px;
@@ -2964,21 +1491,21 @@ export default function css() {
     -webkit-animation: coli1 0.3s linear infinite;
             animation: coli1 0.3s linear infinite;
   }
-  .loader-2-73::before {
+  .loader-73::before {
     top: -4px;
     transform: rotate(45deg);
     -webkit-animation: coli2 0.3s linear infinite;
             animation: coli2 0.3s linear infinite;
   }
   
-  .loader-2-74 {
+  .loader-74 {
     width: 100%;
     height: 4.8px;
     display: inline-block;
     position: relative;
     overflow: hidden;
   }
-  .loader-2-74::after {
+  .loader-74::after {
     content: "";
     width: 96px;
     height: 4.8px;
@@ -2990,7 +1517,7 @@ export default function css() {
             animation: hitZak 0.6s ease-in-out infinite alternate;
   }
   
-  .loader-2-75 {
+  .loader-75 {
     width: 100%;
     height: 4.8px;
     display: inline-block;
@@ -2998,7 +1525,7 @@ export default function css() {
     position: relative;
     overflow: hidden;
   }
-  .loader-2-75::after {
+  .loader-75::after {
     content: "";
     width: 0%;
     height: 4.8px;
@@ -3012,7 +1539,7 @@ export default function css() {
             animation: animFw 6s ease-in infinite;
   }
   
-  .loader-2-76 {
+  .loader-76 {
     width: 100%;
     height: 4.8px;
     display: inline-block;
@@ -3020,7 +1547,7 @@ export default function css() {
     position: relative;
     overflow: hidden;
   }
-  .loader-2-76::after {
+  .loader-76::after {
     content: "";
     width: 0%;
     height: 4.8px;
@@ -3035,14 +1562,14 @@ export default function css() {
             animation: animFw 10s ease-in infinite, barStripe 1s linear infinite;
   }
   
-  .loader-2-77 {
+  .loader-77 {
     width: 100%;
     height: 8px;
     display: inline-block;
     position: relative;
     overflow: hidden;
   }
-  .loader-2-77::before {
+  .loader-77::before {
     content: "";
     top: 0;
     left: 0;
@@ -3054,7 +1581,7 @@ export default function css() {
     background-size: 15px 15px;
     z-index: 10;
   }
-  .loader-2-77::after {
+  .loader-77::after {
     content: "";
     width: 0%;
     height: 100%;
@@ -3067,7 +1594,7 @@ export default function css() {
             animation: animFw 10s ease-in infinite;
   }
   
-  .loader-2-78 {
+  .loader-78 {
     width: 100%;
     height: 12px;
     display: inline-block;
@@ -3079,7 +1606,7 @@ export default function css() {
             animation: barStripe 1s linear infinite;
   }
   
-  .loader-2-79 {
+  .loader-79 {
     width: 96px;
     height: 16px;
     display: inline-block;
@@ -3093,7 +1620,7 @@ export default function css() {
             animation: barStripe 1s linear infinite;
   }
   
-  .loader-2-80 {
+  .loader-80 {
     width: 96px;
     height: 24px;
     display: inline-block;
@@ -3107,7 +1634,7 @@ export default function css() {
             animation: barStripe 0.6s linear infinite;
   }
   
-  .loader-2-81 {
+  .loader-81 {
     width: 130px;
     height: 48px;
     display: inline-block;
@@ -3119,7 +1646,7 @@ export default function css() {
     background-position: 0 0, 16px 16px;
   }
   
-  .loader-2-82 {
+  .loader-82 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -3130,7 +1657,7 @@ export default function css() {
     background-position: center;
     border-radius: 50%;
   }
-  .loader-2-82::after, .loader-2-82::before {
+  .loader-82::after, .loader-82::before {
     content: "";
     position: absolute;
     height: 16px;
@@ -3143,7 +1670,7 @@ export default function css() {
     -webkit-animation: rotation 10s linear infinite;
             animation: rotation 10s linear infinite;
   }
-  .loader-2-82::before {
+  .loader-82::before {
     height: 22px;
     width: 2px;
     transform: translateX(-50%) rotate(0deg);
@@ -3151,12 +1678,12 @@ export default function css() {
             animation-duration: 1s;
   }
   
-  .loader-2-83 {
+  .loader-83 {
     width: 175px;
     height: 80px;
     position: relative;
   }
-  .loader-2-83::before {
+  .loader-83::before {
     content: "";
     left: 60px;
     bottom: 18px;
@@ -3170,7 +1697,7 @@ export default function css() {
     -webkit-animation: rotationBack 3s linear infinite;
             animation: rotationBack 3s linear infinite;
   }
-  .loader-2-83::after {
+  .loader-83::after {
     content: "";
     left: 94px;
     bottom: 15px;
@@ -3184,7 +1711,7 @@ export default function css() {
     animation: rotationBack 4s linear infinite reverse;
   }
   
-  .loader-2-84 {
+  .loader-84 {
     width: 15px;
     height: 20px;
     background: #FFF;
@@ -3193,7 +1720,7 @@ export default function css() {
     -webkit-animation: bump 0.4s ease-in infinite alternate;
             animation: bump 0.4s ease-in infinite alternate;
   }
-  .loader-2-84::after {
+  .loader-84::after {
     content: "";
     left: 50%;
     top: 100%;
@@ -3203,7 +1730,7 @@ export default function css() {
     border-top-color: #FFF;
   }
   
-  .loader-2-85 {
+  .loader-85 {
     width: 15px;
     height: 20px;
     background: #FFF;
@@ -3212,7 +1739,7 @@ export default function css() {
     -webkit-animation: bump 0.4s linear infinite alternate;
             animation: bump 0.4s linear infinite alternate;
   }
-  .loader-2-85::after {
+  .loader-85::after {
     content: "";
     left: 50%;
     bottom: 100%;
@@ -3222,14 +1749,14 @@ export default function css() {
     border-bottom-color: #FFF;
   }
   
-  .loader-2-86 {
+  .loader-86 {
     width: 48px;
     height: 12px;
     background: #FFF;
     display: inline-block;
     position: relative;
   }
-  .loader-2-86::after {
+  .loader-86::after {
     content: "";
     left: 50%;
     bottom: 0;
@@ -3240,7 +1767,7 @@ export default function css() {
     -webkit-animation: bump 0.4s ease-in-out infinite alternate;
             animation: bump 0.4s ease-in-out infinite alternate;
   }
-  .loader-2-86::before {
+  .loader-86::before {
     content: "";
     left: 50%;
     bottom: 25px;
@@ -3253,14 +1780,14 @@ export default function css() {
             animation: bump 0.4s ease-in-out infinite alternate;
   }
   
-  .loader-2-87 {
+  .loader-87 {
     width: 48px;
     height: 12px;
     background: #FFF;
     display: inline-block;
     position: relative;
   }
-  .loader-2-87::after {
+  .loader-87::after {
     content: "";
     left: 50%;
     top: -47px;
@@ -3271,7 +1798,7 @@ export default function css() {
     -webkit-animation: bump 0.4s ease-in-out infinite alternate;
             animation: bump 0.4s ease-in-out infinite alternate;
   }
-  .loader-2-87::before {
+  .loader-87::before {
     content: "";
     left: 50%;
     bottom: 15px;
@@ -3284,7 +1811,7 @@ export default function css() {
             animation: bump 0.4s ease-in-out infinite alternate;
   }
   
-  .loader-2-88 {
+  .loader-88 {
     width: 48px;
     height: 24px;
     display: inline-block;
@@ -3294,7 +1821,7 @@ export default function css() {
     -webkit-animation: fillX 2s linear infinite;
             animation: fillX 2s linear infinite;
   }
-  .loader-2-88::after {
+  .loader-88::after {
     content: "";
     position: absolute;
     left: 100%;
@@ -3305,14 +1832,14 @@ export default function css() {
     height: 12px;
   }
   
-  .loader-2-89 {
+  .loader-89 {
     width: 48px;
     height: 24px;
     display: inline-block;
     position: relative;
     border: 1px solid #FFF;
   }
-  .loader-2-89::after {
+  .loader-89::after {
     content: "";
     position: absolute;
     left: 100%;
@@ -3322,7 +1849,7 @@ export default function css() {
     width: 5px;
     height: 12px;
   }
-  .loader-2-89::before {
+  .loader-89::before {
     content: "";
     position: absolute;
     left: -8px;
@@ -3334,7 +1861,7 @@ export default function css() {
             animation: animloader89 2s linear infinite;
   }
   
-  .loader-2-90 {
+  .loader-90 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -3345,7 +1872,7 @@ export default function css() {
     color: rgba(255, 61, 0, 0.9);
     border-radius: 0 0 4px 4px;
   }
-  .loader-2-90::after {
+  .loader-90::after {
     content: "";
     position: absolute;
     left: 100%;
@@ -3357,7 +1884,7 @@ export default function css() {
     border-radius: 0 4px 4px 0;
   }
   
-  .loader-2-91 {
+  .loader-91 {
     width: 32px;
     height: 72px;
     display: inline-block;
@@ -3370,7 +1897,7 @@ export default function css() {
     transform: perspective(140px) rotateX(-45deg);
   }
   
-  .loader-2-92 {
+  .loader-92 {
     width: 48px;
     height: 40px;
     display: inline-block;
@@ -3378,7 +1905,7 @@ export default function css() {
     background: #FFF;
     border-radius: 15% 15% 35% 35%;
   }
-  .loader-2-92::after {
+  .loader-92::after {
     content: "";
     position: absolute;
     left: 45px;
@@ -3388,7 +1915,7 @@ export default function css() {
     height: 20px;
     border-radius: 0 4px 4px 0;
   }
-  .loader-2-92::before {
+  .loader-92::before {
     content: "";
     position: absolute;
     width: 1px;
@@ -3400,7 +1927,7 @@ export default function css() {
             animation: animloader92 1s ease infinite;
   }
   
-  .loader-2-93 {
+  .loader-93 {
     width: 96px;
     height: 48px;
     display: inline-block;
@@ -3409,7 +1936,7 @@ export default function css() {
     border-radius: 48px 48px 0 0;
     overflow: hidden;
   }
-  .loader-2-93::after {
+  .loader-93::after {
     content: "";
     position: absolute;
     width: 24px;
@@ -3420,7 +1947,7 @@ export default function css() {
     transform: translateX(-50%);
     bottom: 0;
   }
-  .loader-2-93::before {
+  .loader-93::before {
     content: "";
     position: absolute;
     width: 4px;
@@ -3435,7 +1962,7 @@ export default function css() {
             animation: animloader93 2s linear infinite alternate;
   }
   
-  .loader-2-94 {
+  .loader-94 {
     width: 48px;
     height: 48px;
     display: inline-block;
@@ -3445,7 +1972,7 @@ export default function css() {
     -webkit-animation: animloader94 2s linear infinite;
             animation: animloader94 2s linear infinite;
   }
-  .loader-2-94::after {
+  .loader-94::after {
     content: "";
     width: 6px;
     height: 24px;
@@ -3456,13 +1983,13 @@ export default function css() {
     left: 46px;
   }
   
-  .loader-2-95 {
+  .loader-95 {
     width: 48px;
     height: 48px;
     display: inline-block;
     position: relative;
   }
-  .loader-2-95::after {
+  .loader-95::after {
     content: "";
     width: 48px;
     height: 48px;
@@ -3475,7 +2002,7 @@ export default function css() {
     -webkit-animation: animMarker 0.4s ease-in-out infinite alternate;
             animation: animMarker 0.4s ease-in-out infinite alternate;
   }
-  .loader-2-95::before {
+  .loader-95::before {
     content: "";
     position: absolute;
     left: 0;
@@ -3490,7 +2017,7 @@ export default function css() {
             animation: animShadow 0.4s ease-in-out infinite alternate;
   }
   
-  .loader-2-96 {
+  .loader-96 {
     width: 48px;
     height: 48px;
     background: #FF3D00;
@@ -3498,7 +2025,7 @@ export default function css() {
     position: relative;
     animation: rotationBack 1s ease-in-out infinite reverse;
   }
-  .loader-2-96::before {
+  .loader-96::before {
     content: "";
     left: 0;
     top: 0;
@@ -3509,7 +2036,7 @@ export default function css() {
     background: #FF3D00;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   }
-  .loader-2-96::after {
+  .loader-96::after {
     content: "";
     width: 32px;
     height: 32px;
@@ -3522,7 +2049,7 @@ export default function css() {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   }
   
-  .loader-2-97 {
+  .loader-97 {
     width: 60px;
     height: 60px;
     display: inline-block;
@@ -3532,7 +2059,7 @@ export default function css() {
     background-repeat: repeat-x;
     background-position: center bottom, center -5px;
   }
-  .loader-2-97::before, .loader-2-97::after {
+  .loader-97::before, .loader-97::after {
     content: "";
     position: absolute;
     left: -20px;
@@ -3548,13 +2075,13 @@ export default function css() {
     -webkit-animation: animPend 1s linear infinite alternate;
             animation: animPend 1s linear infinite alternate;
   }
-  .loader-2-97::after {
+  .loader-97::after {
     -webkit-animation: animPend2 1s linear infinite alternate;
             animation: animPend2 1s linear infinite alternate;
     left: 100%;
   }
   
-  .loader-2-98 {
+  .loader-98 {
     width: 24px;
     height: 80px;
     border: 1px solid #FFF;
@@ -3568,7 +2095,7 @@ export default function css() {
     -webkit-animation: animloader98 6s linear infinite;
             animation: animloader98 6s linear infinite;
   }
-  .loader-2-98::after {
+  .loader-98::after {
     content: "";
     top: -6px;
     left: 50%;
@@ -3579,7 +2106,7 @@ export default function css() {
     width: 28px;
     height: 6px;
   }
-  .loader-2-98::before {
+  .loader-98::before {
     content: "";
     left: 0;
     bottom: -4px;
@@ -3591,7 +2118,7 @@ export default function css() {
             animation: animloader98s 6s linear infinite;
   }
   
-  .loader-2-99 {
+  .loader-99 {
     width: 20px;
     height: 20px;
     margin-top: 80px;
@@ -3600,7 +2127,7 @@ export default function css() {
     border: 5px solid #FFF;
     position: relative;
   }
-  .loader-2-99::before {
+  .loader-99::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -3618,7 +2145,7 @@ export default function css() {
             animation: animloader99 6s linear infinite;
   }
   
-  .loader-2-100 {
+  .loader-100 {
     width: 180px;
     height: 140px;
     background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 15px at 15px 15px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
@@ -3627,7 +2154,7 @@ export default function css() {
     background-position: 0px 30px, 30px 0px, 113px 29px, 147px 50px, 23px 60px;
     position: relative;
   }
-  .loader-2-100::after {
+  .loader-100::after {
     content: "";
     position: absolute;
     left: 2px;
@@ -3639,7 +2166,7 @@ export default function css() {
             animation: animloader100 0.6s linear infinite;
   }
   
-  .loader-2-101 {
+  .loader-101 {
     width: 175px;
     height: 80px;
     background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
@@ -3648,7 +2175,7 @@ export default function css() {
     background-repeat: no-repeat;
     position: relative;
   }
-  .loader-2-101::after {
+  .loader-101::after {
     content: "";
     left: 50%;
     bottom: 0;
@@ -3659,7 +2186,7 @@ export default function css() {
     -webkit-animation: fadePush 1s linear infinite;
             animation: fadePush 1s linear infinite;
   }
-  .loader-2-101::before {
+  .loader-101::before {
     content: "";
     left: 50%;
     bottom: 30px;
@@ -3672,7 +2199,7 @@ export default function css() {
             animation: fadePush 1s linear infinite;
   }
   
-  .loader-2-102 {
+  .loader-102 {
     width: 175px;
     height: 80px;
     background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
@@ -3681,7 +2208,7 @@ export default function css() {
     background-repeat: no-repeat;
     position: relative;
   }
-  .loader-2-102::after {
+  .loader-102::after {
     content: "";
     left: 50%;
     bottom: 30px;
@@ -3692,7 +2219,7 @@ export default function css() {
     -webkit-animation: fadePull 1s linear infinite;
             animation: fadePull 1s linear infinite;
   }
-  .loader-2-102::before {
+  .loader-102::before {
     content: "";
     left: 50%;
     bottom: 15px;
@@ -3705,7 +2232,7 @@ export default function css() {
             animation: fadePull 1s linear infinite;
   }
   
-  .loader-2-103 {
+  .loader-103 {
     width: 175px;
     height: 80px;
     background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
@@ -3714,7 +2241,7 @@ export default function css() {
     background-repeat: no-repeat;
     position: relative;
   }
-  .loader-2-103::after {
+  .loader-103::after {
     content: "";
     left: 0;
     right: 0;
@@ -3730,7 +2257,7 @@ export default function css() {
             animation: rotation 1s linear infinite;
   }
   
-  .loader-2-104 {
+  .loader-104 {
     width: 175px;
     height: 80px;
     background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
@@ -3739,7 +2266,7 @@ export default function css() {
     background-repeat: no-repeat;
     position: relative;
   }
-  .loader-2-104::before {
+  .loader-104::before {
     content: "";
     left: 60px;
     bottom: 18px;
@@ -3753,7 +2280,7 @@ export default function css() {
     -webkit-animation: rotationBack 3s linear infinite;
             animation: rotationBack 3s linear infinite;
   }
-  .loader-2-104::after {
+  .loader-104::after {
     content: "";
     left: 94px;
     bottom: 15px;
@@ -3767,7 +2294,7 @@ export default function css() {
     animation: rotationBack 4s linear infinite reverse;
   }
   
-  .loader-2-105 {
+  .loader-105 {
     width: 175px;
     height: 80px;
     background-image: linear-gradient(#263238 50px, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
@@ -3776,7 +2303,7 @@ export default function css() {
     background-repeat: no-repeat;
     position: relative;
   }
-  .loader-2-105::after {
+  .loader-105::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -3796,7 +2323,7 @@ export default function css() {
             animation: animloader105 4s linear infinite;
   }
   
-  .loader-2-106 {
+  .loader-106 {
     width: 32px;
     height: 90px;
     margin-bottom: 20px;
@@ -3811,7 +2338,7 @@ export default function css() {
     -webkit-animation: animloader106back 1s linear infinite alternate;
             animation: animloader106back 1s linear infinite alternate;
   }
-  .loader-2-106::before {
+  .loader-106::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -3822,7 +2349,7 @@ export default function css() {
     box-shadow: 0px 15px #FF3D00 inset;
     top: 67px;
   }
-  .loader-2-106::after {
+  .loader-106::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -3840,7 +2367,7 @@ export default function css() {
             animation: animloader106 1s linear infinite alternate;
   }
   
-  .loader-2-107 {
+  .loader-107 {
     width: 106px;
     height: 56px;
     background-image: linear-gradient(#FFF 50px, transparent 0), linear-gradient(#FFF 50px, transparent 0), linear-gradient(#FFF 50px, transparent 0), linear-gradient(#FFF 50px, transparent 0), radial-gradient(circle 14px, #FFF 100%, transparent 0);
@@ -3850,7 +2377,7 @@ export default function css() {
     position: relative;
     transform: rotate(-45deg);
   }
-  .loader-2-107::after, .loader-2-107::before {
+  .loader-107::after, .loader-107::before {
     content: "";
     position: absolute;
     width: 56px;
@@ -3866,12 +2393,12 @@ export default function css() {
     -webkit-animation: rotation 0.3s linear infinite;
             animation: rotation 0.3s linear infinite;
   }
-  .loader-2-107::before {
+  .loader-107::before {
     left: 25px;
     top: 60px;
   }
   
-  .loader-2-108 {
+  .loader-108 {
     width: 48px;
     height: 24px;
     color: #FFF;
@@ -3882,7 +2409,7 @@ export default function css() {
     -webkit-animation: animloader108 4s linear infinite;
             animation: animloader108 4s linear infinite;
   }
-  .loader-2-108::after {
+  .loader-108::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -3896,7 +2423,7 @@ export default function css() {
             animation: animloader108s 4s linear infinite;
   }
   
-  .loader-2-109 {
+  .loader-109 {
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -3904,7 +2431,7 @@ export default function css() {
     letter-spacing: 2px;
     position: relative;
   }
-  .loader-2-109::after {
+  .loader-109::after {
     content: "Loading";
     position: absolute;
     left: 0;
@@ -3917,7 +2444,7 @@ export default function css() {
             animation: animloader110 6s linear infinite;
   }
   
-  .loader-2-110 {
+  .loader-110 {
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -3925,7 +2452,7 @@ export default function css() {
     letter-spacing: 2px;
     position: relative;
   }
-  .loader-2-110::after {
+  .loader-110::after {
     content: "Loading";
     position: absolute;
     left: 0;
@@ -3939,7 +2466,7 @@ export default function css() {
             animation: animloader110 6s linear infinite;
   }
   
-  .loader-2-111 {
+  .loader-111 {
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -3948,7 +2475,7 @@ export default function css() {
     letter-spacing: 2px;
     position: relative;
   }
-  .loader-2-111::after {
+  .loader-111::after {
     content: "Loading";
     position: absolute;
     left: 0;
@@ -3961,14 +2488,14 @@ export default function css() {
             animation: animloader111 6s linear infinite;
   }
   
-  .loader-2-112 {
+  .loader-112 {
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #FFF;
     position: relative;
   }
-  .loader-2-112::before {
+  .loader-112::before {
     content: "";
     position: absolute;
     left: 34px;
@@ -3982,14 +2509,14 @@ export default function css() {
             animation: rotation 0.6s linear infinite;
   }
   
-  .loader-2-113 {
+  .loader-113 {
     color: #FFF;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     letter-spacing: 4px;
   }
-  .loader-2-113::before {
+  .loader-113::before {
     content: "";
     position: absolute;
     right: 70px;
@@ -4000,7 +2527,7 @@ export default function css() {
     -webkit-animation: animloader113L 1s linear infinite alternate;
             animation: animloader113L 1s linear infinite alternate;
   }
-  .loader-2-113::after {
+  .loader-113::after {
     content: "";
     width: 10px;
     height: 10px;
@@ -4013,14 +2540,14 @@ export default function css() {
             animation: animloader113 1s linear infinite alternate;
   }
   
-  .loader-2-114 {
+  .loader-114 {
     color: #FFF;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     letter-spacing: 4px;
   }
-  .loader-2-114::before {
+  .loader-114::before {
     content: "";
     position: absolute;
     right: 70px;
@@ -4029,7 +2556,7 @@ export default function css() {
     width: 5.15px;
     background: currentColor;
   }
-  .loader-2-114::after {
+  .loader-114::after {
     content: "";
     width: 8px;
     height: 8px;
@@ -4042,13 +2569,13 @@ export default function css() {
             animation: animloader114 1s ease-in infinite;
   }
   
-  .loader-2-115 {
+  .loader-115 {
     color: #FFF;
     position: relative;
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .loader-2-115::after {
+  .loader-115::after {
     content: "";
     width: 5px;
     height: 5px;
@@ -4060,14 +2587,14 @@ export default function css() {
             animation: animloader115 1s linear infinite;
   }
   
-  .loader-2-116 {
+  .loader-116 {
     color: #FFF;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     letter-spacing: 4px;
   }
-  .loader-2-116::before {
+  .loader-116::before {
     content: "";
     position: absolute;
     right: 70px;
@@ -4076,7 +2603,7 @@ export default function css() {
     width: 5px;
     background: currentColor;
   }
-  .loader-2-116::after {
+  .loader-116::after {
     content: "";
     width: 4px;
     height: 4px;
@@ -4088,14 +2615,14 @@ export default function css() {
             animation: animloader116 0.6s ease-out infinite alternate;
   }
   
-  .loader-2-117 {
+  .loader-117 {
     color: #FFF;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     letter-spacing: 4px;
   }
-  .loader-2-117::before {
+  .loader-117::before {
     content: "";
     position: absolute;
     right: 68px;
@@ -4107,7 +2634,7 @@ export default function css() {
     -webkit-animation: animloader117 1s linear infinite alternate;
             animation: animloader117 1s linear infinite alternate;
   }
-  .loader-2-117::after {
+  .loader-117::after {
     content: "";
     width: 4px;
     height: 4px;
@@ -4119,10 +2646,10 @@ export default function css() {
             animation: animloader116 1s ease-out infinite alternate;
   }
   
-  .loader-2-118 {
+  .loader-118 {
     position: relative;
   }
-  .loader-2-118::before {
+  .loader-118::before {
     content: "Loading";
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
@@ -4132,7 +2659,7 @@ export default function css() {
     -webkit-animation: floating 1s ease-out infinite alternate;
             animation: floating 1s ease-out infinite alternate;
   }
-  .loader-2-118::after {
+  .loader-118::after {
     content: "";
     width: 100%;
     height: 10px;
@@ -4146,7 +2673,7 @@ export default function css() {
             animation: animloader118 1s ease-out infinite alternate;
   }
   
-  .loader-2-119 {
+  .loader-119 {
     font-size: 48px;
     letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
@@ -4155,7 +2682,7 @@ export default function css() {
             animation: animloader119 1s ease-in infinite alternate;
   }
   
-  .loader-2-120 {
+  .loader-120 {
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -4163,7 +2690,7 @@ export default function css() {
     letter-spacing: 2px;
     position: relative;
   }
-  .loader-2-120::after {
+  .loader-120::after {
     content: "Loading";
     position: absolute;
     left: 0;
@@ -4176,7 +2703,7 @@ export default function css() {
             animation: animloader111 10s ease-in infinite;
   }
   
-  .loader-2-121 {
+  .loader-121 {
     width: 95%;
     height: 100px;
     background-image: linear-gradient(100deg, transparent, rgba(38, 50, 56, 0.5) 50%, transparent 80%), radial-gradient(circle 50px at 50px 50px, #FFF 99%, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0);
@@ -4187,7 +2714,7 @@ export default function css() {
             animation: animloader121 1s linear infinite;
   }
   
-  .loader-2-122 {
+  .loader-122 {
     width: 95%;
     height: 100px;
     background-image: linear-gradient(100deg, transparent, rgba(38, 50, 56, 0.5) 50%, transparent 80%), linear-gradient(#FFF 100px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0), linear-gradient(#FFF 20px, transparent 0);
@@ -4198,7 +2725,7 @@ export default function css() {
             animation: animloader121 1s linear infinite;
   }
   
-  .loader-2-123 {
+  .loader-123 {
     width: 95%;
     height: 100px;
     position: relative;
@@ -4209,7 +2736,7 @@ export default function css() {
     -webkit-animation: animloader123 1s linear infinite;
             animation: animloader123 1s linear infinite;
   }
-  .loader-2-123::after {
+  .loader-123::after {
     content: "";
     width: 100px;
     height: 100px;
@@ -4220,13 +2747,13 @@ export default function css() {
     left: 0;
   }
   
-  .loader-2-124 {
+  .loader-124 {
     width: 320px;
     height: 150px;
     position: relative;
     background: #FFF;
   }
-  .loader-2-124::after {
+  .loader-124::after {
     content: "";
     width: calc(100% - 30px);
     height: calc(100% - 30px);
@@ -4241,13 +2768,13 @@ export default function css() {
             animation: animloader124 1s linear infinite;
   }
   
-  .loader-2-125 {
+  .loader-125 {
     width: 320px;
     height: 150px;
     position: relative;
     background: #FFF;
   }
-  .loader-2-125::after {
+  .loader-125::after {
     content: "";
     width: calc(100% - 30px);
     height: calc(100% - 30px);
@@ -4262,13 +2789,13 @@ export default function css() {
             animation: animloader124 1s linear infinite;
   }
   
-  .loader-2-126 {
+  .loader-126 {
     width: 164px;
     height: 170px;
     position: relative;
     background: #FFF;
   }
-  .loader-2-126::after {
+  .loader-126::after {
     content: "";
     width: calc(100% - 30px);
     height: calc(100% - 30px);

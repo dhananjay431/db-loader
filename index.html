@@ -4,22 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./dist/bundle.js"></script>
+    <title>dbel431-loader</title>
+    <script src="./dist/dbLoader.js"></script>
 
 </head>
 
 <body>
-
-    werwqer
-
-
-    wqerwe<br>wqerwe<br>wqerwe<br>wqerwe<br>wqerwe<br>wqerwe<br>wqerwe<br>wqerwe<br>wqerwe<br>wqerwe<br>
-    <script>
-        db.start("2-17");
-        db.call(5000, () => {
-            db.end()
-        })
+    <script> 
+       setInterval(() => {
+                let n = Math.floor( (new Date().getTime() / 1000) % 119);
+                db.start(n);
+                db.call(1000, () => {
+                    db.end()
+                })
+            }, 1000)
     </script>
 </body>
 
