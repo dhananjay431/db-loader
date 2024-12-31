@@ -4,7 +4,8 @@
   "description": "db-loader",
   "main": "index.js",
   "scripts": {
-    "start": "servor --reload"
+    "start": "servor --reload",
+    "build": "webpack"
   },
   "author": "dhananjay",
   "license": "ISC",
