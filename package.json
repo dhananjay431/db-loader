@@ -1,7 +1,7 @@
 {
-  "name": "db-loader",
-  "version": "1.0.7",
-  "description": "db-loader",
+  "name": "dbloader",
+  "version": "1.0.0",
+  "description": "dbloader",
   "main": "index.js",
   "scripts": {
     "start": "servor --reload",
