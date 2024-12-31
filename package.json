@@ -1,6 +1,6 @@
 {
   "name": "dbel431-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dbel431-loader",
   "main": "index.js",
   "scripts": {
